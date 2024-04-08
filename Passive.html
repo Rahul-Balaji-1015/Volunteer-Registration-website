@@ -1,0 +1,183 @@
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--clr-alpha);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    background-color:Turquoise ;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+.content {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.input-box {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.gender-title {
+    font-weight: bold;
+}
+
+.gender-category {
+    margin-left: 20px;
+}
+
+.alert {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.button-container {
+    text-align: center;
+}
+
+button {
+    background-color: dodgerblue;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+</style>
+<style>
+body{background-image:url(img8.jpg);}
+</style>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passive Volunteers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="color:gold;">
+<div class="container">   
+    <form action="" method="post">
+        <h2>Passive Volunteer Registration</h2>
+        <br>
+        <br>
+        <div class="content">
+            <div class="input-box">
+                <label for="name">Name</label>
+                <input type="text" placeholder="Enter Name" name="name" required>
+            </div>
+            <br>
+            <br>
+            <label for="birthday">Date of Birth</label>
+            <input type="date" id="dob" name="dob">
+            <br>
+            <br>
+            <br>
+            <div class="input-box">
+                <label for="email">Email</label>
+                <input type="email" placeholder="Enter your valid email address" name="email" required>
+            </div>
+            <br>
+            <br>
+            <div class="input-box">
+                <label for="phonenumber">Phone Number</label>
+                <input type="tel" placeholder="Enter phone number" name="phonenumber" required>
+            </div>
+            <br>
+            <br>
+            <span class="gender-title">Gender</span>
+            <div class="gender-category">
+                <input type="radio" id="male" name="gender">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender">
+                <label for="other">Other</label><br>
+            </div>
+            <br>
+            <br>
+            <div class="input-box">
+                <label for="bloodgroup">Blood Group</label>
+                <input type="text" placeholder="Enter blood group" name="bloodgroup" required>
+            </div>
+            <br>
+            <br>
+            <div class="input-box">
+                <label for="address">Address</label>
+                <input type="text" placeholder="Enter address" name="address" required>
+            </div>
+            <br>
+            <br>
+            <div class="input-box">
+                <label for="aadharnumber">Aadhar Number</label>
+                <input type="tel" placeholder="Enter Aadhar number" name="aadharnumber" required>
+            </div>
+            <br>
+            <br>
+            <label for="donation"><span style="font-size: 18px;">Choose the Way to Donate:</span></label>
+            <select name="donation" id="donation">
+                <option value="money"><a href="money.html">Money</a></option>
+                <option value="medical">Medical</option>
+                <option value="food">Food</option>
+                <option value="shelter">Shelter</option>
+            </select>
+            <div class="input-box">
+                <a href="money.html">If it is Money,Go To Payment Page</a>
+            </div>
+            <br>
+            <br>
+            
+            <br>
+            <br>
+            <div class="alert">
+                <p>By clicking Sign Up, you agree to our <a href="#">Terms,</a><a>Privacy Policy </a> and <a href="#"> Cookies Policy.</a>You may SMS notifications from us and can opt out at any time.</p>
+                <div class="button-container">
+                    <button type="submit">Register</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>
